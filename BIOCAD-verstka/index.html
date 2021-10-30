@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="page-main">
+    <div class="container">
+      <div class="search">
+        <p class="search__title">Enter inventory number, guid or bims id</p>
+        <form class="search__form" action="" method="POST">
+          <input class="search__input" type="text" value="A-001234">
+          <button class="search__submit" type="submit">Search</button>
+        </form>
+      </div>
+
+      <section class="content">
+        <div class="content__column-left">
+          <div class="content__preview">
+            <div class="content__image">
+              <img src="svg/weight.svg" alt="">
+            </div>
+            <h1 class="content__title">
+              Аналитические весы<br>
+              OHAUS Adventurer<br>
+              АХ324 (B715976163)
+            </h1>
+          </div>
+
+          <form class="content__form" method="POST" action="">
+            <select class="content__select" name="months">
+              <option value="1month" selected>1 month</option>
+              <option value="2month">2 month</option>
+              <option value="3month">3 month</option>
+              <option value="4month">4 month</option>
+            </select>
+
+            <ul class="content__radios__list">
+              <li class="content__radio__group">
+                <input class="content__radio" type="radio" name="type" value="Calibration" id="Calibration" checked/>
+                <label class="content__radio__label" for="Calibration">
+                  Calibration
+                </label>
+              </li>
+              <li class="content__radio__group">
+                <input class="content__radio" type="radio" name="type" value="Measuring" id="Measuring" />
+                <label class="content__radio__label" for="Measuring">
+                  Measuring
+                </label>
+              </li>
+              <li class="content__radio__group">
+                <input class="content__radio" type="radio" name="type" value="Using" id="Using" />
+                <label class="content__radio__label" for="Using">
+                  Using
+                </label>
+              </li>
+            </ul>
+
+            <button class="content__generate" type="submit">
+              Generate report
+            </button>
+          </form>
+        </div>
+
+        <div class="content__column-right">
+          <ul class="content__specs">
+            <li class="content__spec">Тип оборудования: <span class="content__spec-strong">Весы</span></li>
+            <li class="content__spec">Статус: <span class="content__spec-strong">Готов к работе</span></li>
+            <li class="content__spec">Изготовитель: <span class="content__spec-strong">Ohaus</span></li>
+            <li class="content__spec">Модель: <span class="content__spec-strong">AX-123</span></li>
+            <li class="content__spec">Ответственное подразделение (ремонт): <span class="content__spec-strong">Группа обслуживания <br> лабораторного оборудования</span></li>
+            <li class="content__spec">Эксплуатирующее подразделение: <span class="content__spec-strong">Химико-аналитическая лаборатория 2.0</span></li>
+            <li class="content__spec">МОЛ: <span class="content__spec-strong">Иванов Иван Иванович</span></li>
+            <li class="content__spec">Территория: <span class="content__spec-strong">г. Санкт-Петербург (Нойдорф)</span></li>
+            <li class="content__spec">Серийный номер: <span class="content__spec-strong">B715976163</span></li>
+            <li class="content__spec">GUID: <a class="content__spec__link" href="#">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></li>
+            <li class="content__spec">Bims ID: <a class="content__spec__link" href="#">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></li>
+            <li class="content__spec">Tam: <a class="content__spec__link" href="#">А-001234</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="report">
+        <h2 class="report__title">Calibration report</h2>
+
+        <div class="report__table">
+          <div class="table__thead">
+            <div class="table__thead__row">
+              <div class="table__row-header-first">
+                Data
+              </div>
+              <div class="table__row-header-second">
+                Used buffer solutions
+              </div>
+              <div class="table__row-header-third">
+                Slope, %<br>
+                Norm 95-105
+              </div>
+              <div class="table__row-header-fourth">
+                Offset, mV<br>
+                Norm ±(0-20)
+              </div>
+              <div class="table__row-header-fifth">
+                User
+              </div>
+            </div>
+          </div>
+          <div class="table__tbody">
+            <div class="table__tbody__row">
+              <div class="table__row-body-first">
+                04.10.19<br>
+                10:23
+              </div>
+              <div class="table__row-body-second">
+                В1 : № 2000460789536: pH 1.09<br>
+                В2 : № 2000460789536: pH 2.00<br>
+                В3 : № 2000460789536: pH 4.01<br>
+                В4 : № 2000460789536: pH 7.00<br>
+                В5 : № 2000460789536: pH 9.21<br>
+              </div>
+              <div class="table__row-body-third">
+                98.7
+                <img class="table__image" src="svg/ok.svg" alt="">
+              </div>
+              <div class="table__row-body-fourth">
+                -0.3
+                <img class="table__image" src="svg/ok.svg" alt="">
+              </div>
+              <div class="table__row-body-fifth">
+                Иванов Генадий Петрович
+              </div>
+            </div>
+            <div class="table__tbody__row">
+              <div class="table__row-body-first">
+                04.10.19<br>
+                10:23
+              </div>
+              <div class="table__row-body-second">
+                В1: № 2000460789536: pH 1.09<br>
+                В2: № 2000460789536: pH 2.00<br>
+                В3: № 2000460789536: pH 4.01<br>
+                В4: № 2000460789536: pH 7.00<br>
+                В5: № 2000460789536: pH 9.21<br>
+              </div>
+              <div class="table__row-body-third">
+                98.7
+                <img class="table__image" src="svg/ok.svg" alt="">
+              </div>
+              <div class="table__row-body-fourth">
+                -0.3
+                <img class="table__image" src="svg/ok.svg" alt="">
+              </div>
+              <div class="table__row-body-fifth">
+                Петров Иван Генадьевич
+              </div>
+            </div>
+            <div class="table__tbody__row">
+              <div class="table__row-body-first">
+                04.10.19<br>
+                10:23
+              </div>
+              <div class="table__row-body-second">
+                В1: № 2000460789536: pH 1.09<br>
+                В2: № 2000460789536: pH 2.00<br>
+                В3: № 2000460789536: pH 4.01<br>
+                В4: № 2000460789536: pH 7.00<br>
+                В5: № 2000460789536: pH 9.21<br>
+              </div>
+              <div class="table__row-body-third">
+                98.7
+                <img class="table__image" src="svg/ok.svg" alt="">
+              </div>
+              <div class="table__row-body-fourth">
+                -0.3
+                <img class="table__image" src="svg/ok.svg" alt="">
+              </div>
+              <div class="table__row-body-fifth">
+                Петров Генадий Иванович
+              </div>
+            </div>
+            <div class="table__tbody__row">
+              <div class="table__row-body-first">
+                04.10.19<br>
+                10:23
+              </div>
+              <div class="table__row-body-second">
+                В1: № 2000460789536: pH 1.09<br>
+                В2: № 2000460789536: pH 2.00<br>
+                В3: № 2000460789536: pH 4.01<br>
+                В4: № 2000460789536: pH 7.00<br>
+                В5: № 2000460789536: pH 9.21<br>
+              </div>
+              <div class="table__row-body-third">
+                90.1
+                <img class="table__image" src="svg/cancel.svg" alt="">
+              </div>
+              <div class="table__row-body-fourth">
+                -0.5
+                <img class="table__image" src="svg/ok.svg" alt="">
+              </div>
+              <div class="table__row-body-fifth">
+                Генадьев Иван Петрович
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
